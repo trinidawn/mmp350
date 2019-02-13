@@ -3,46 +3,43 @@
     margin-left: auto;
     margin-right: auto;
     
-    display: grid; /* tell the css that this is a grid */
-    /* grid-template-columns: 200px 1fr 2fr; */ /* fractional unit */
-    grid-template-columns: repeat (3, 1fr);
-    grid-template-rows: repeat (4, max-content);
-    grid-column-gap: 20px;
-    grid-row-gap: 1em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, max-content);
+    grid-gap: 1em;
+    
+    grid-template-areas: 
+        "header header menu"
+        "login post sign-up"
+        "main main main";
 }
 
 #title {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    background-color: aquamarine;
+    grid-area: header;
+    background-color: deeppink;
 }
 
 #menu {
-    grid-column: 1 / span 3;
-    grid-row: 2;
-    background-color: coral;
+    grid-area: menu;
+    background-color: palegreen;
 }
 
 #login {
-    grid-column: 1/ span 3;
-    grid-row: 3;
-    background-color: deepskyblue;
+    grid-area: login;
+    background-color: gray;
 }
 
 #sign-up {
-    grid-column: 2 / span 3;
-    grid-row: 2;
-    background-color: yellow;
-}
-
-#post {
-    grid-column: 3 / span 3;
-    grid-row: 3;
-    background-color: darkseagreen;
+    grid-area: sign-up;
+    background-color: mediumslateblue;
 }
 
 #posts {
-    grid-column: 1 / span 3;
-    background-color: fuchsia;
+    grid-area: main;
+    background-color: skyblue;
 }
 
+#post {
+    grid-area: post;
+    background-color: goldenrod;
+}
