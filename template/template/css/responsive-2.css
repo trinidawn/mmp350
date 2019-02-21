@@ -14,7 +14,7 @@
     
     #menu-list {
         justify-content: flex-start;
-		flex-direction: row;
+		flex-direction: column;
 		align-items: center;  
     }
     
