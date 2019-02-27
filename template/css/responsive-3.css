@@ -6,10 +6,10 @@
 		grid-template-areas: 
 			"menu"
             "header"
-			"main"
-            "post"
 			"login"
-			"sign-up";
+			"sign-up"
+            "main"
+            "post";
 	}
     
     #menu-list {
@@ -29,8 +29,8 @@
 		width: 100%;
 		grid-template-areas: 
 			"menu menu header"
-			"main main main"
-			"post sign-up login";
+			"post sign-up login"
+            "main main main";
 	}
 
 
