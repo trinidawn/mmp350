@@ -6,16 +6,16 @@
 		grid-template-areas: 
 			"menu"
             "header"
+            "login"
+			"sign-up"
 			"post"
-			"main"
-			"login"
-			"sign-up";
+			"main";
 	}
     
     #menu-list {
         justify-content: flex-start;
-		flex-direction: row;
-		align-items: center;  
+		flex-direction:  column;
+		align-items: flex-start;  
     }
     
     #menu-list li {
@@ -29,8 +29,8 @@
 		width: 100%;
 		grid-template-areas: 
 			"menu menu menu"
-			"header main main"
-			"sign-up login post";
+			"header login sign-up"
+			"post main main";
 	}
 
 

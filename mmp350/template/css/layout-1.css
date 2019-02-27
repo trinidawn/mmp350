@@ -16,30 +16,30 @@
 
 #title {
     grid-area: header;
-    background-color: deeppink;
+/*    background-color: deeppink;*/
 }
 
 #menu {
     grid-area: menu;
-    background-color: palegreen;
+/*    background-color: palegreen;*/
 }
 
 #login {
     grid-area: login;
-    background-color: gray;
+/*    background-color: gray;*/
 }
 
 #sign-up {
     grid-area: sign-up;
-    background-color: mediumslateblue;
+/*    background-color: mediumslateblue;*/
 }
 
 #posts {
     grid-area: main;
-    background-color: skyblue;
+/*    background-color: skyblue;*/
 }
 
 #post {
     grid-area: post;
-    background-color: goldenrod;
+/*    background-color: goldenrod;*/
 }
