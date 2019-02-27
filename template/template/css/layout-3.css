@@ -16,32 +16,32 @@
 
 #title {
     grid-area: header;
-    background-color: #FFAE03;
+/*    background-color: #FFAE03;*/
 }
 
 #login {
     grid-area: login;
-    background-color: #F283B6;
+/*    background-color: #F283B6;*/
 }
 
 #menu {
     grid-area: menu;
-    background-color: #B1EDE8;
+/*    background-color: #B1EDE8;*/
 }
 
 #posts {
     grid-area: main;
-    background-color: #4CB944;
+/*    background-color: #4CB944;*/
 }
 
 #post {
     grid-area: post;
-    background-color: #54DEFD;
+/*    background-color: #54DEFD;*/
 }
 
 #sign-up {
     grid-area: sign-up;
-    background-color: #FF715B;
+/*    background-color: #FF715B;*/
 }
 
 

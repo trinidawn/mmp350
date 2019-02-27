@@ -9,39 +9,40 @@
     grid-gap: 1em;
     
     grid-template-areas: 
-        "menu header login"
-        "main main post"
-        "sign-up sign-up sign-up";
+        "menu menu header"
+        "sign-up sign-up login"
+        "main main post";
+}
+
+
+#menu {
+    grid-area: menu;
+/*    background-color: darkturquoise;*/
 }
 
 #title {
     grid-area: header;
-    background-color: red;
-}
-
-#menu {
-    grid-area: menu;
-    background-color: darkturquoise;
-}
-
-#login {
-    grid-area: login;
-    background-color: darkgoldenrod;
+/*    background-color: red;*/
 }
 
 #sign-up {
     grid-area: sign-up;
-    background-color: blue;
+/*    background-color: blue;*/
+}
+
+#login {
+    grid-area: login;
+/*    background-color: darkgoldenrod;*/
 }
 
 #posts {
     grid-area: main;
-    background-color: darkorange;
+/*    background-color: darkorange;*/
 }
 
 #post {
     grid-area: post;
-    background-color: darkviolet;
+/*    background-color: darkviolet;*/
 }
 
 

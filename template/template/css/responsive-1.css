@@ -54,13 +54,13 @@
 	}
 
 	#login { 
-		grid-column: 1;
+		grid-column: 3;
 	}
 	#sign-up {
 		grid-column: 2;
 	}
 	#menu {
-		grid-column: 3;
+		grid-column: 1;
 	}
 
 }
