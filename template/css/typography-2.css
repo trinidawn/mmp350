@@ -8,7 +8,7 @@ font-family: 'Libre Baskerville', serif;*/
 body {
 	font-size: 16px;
 	line-height: 1.25;
-	background-color: #ECC8AF;
+/*	background-color: #DCDCDC;*/
 }
 
 
@@ -22,7 +22,7 @@ body {
 
 #title h1 {
 	margin: 0;
-	color: #084C61;
+/*	color: #084C61;*/
     font-size: 2.5em;
 }
 
@@ -31,7 +31,7 @@ body {
 }
 
 #menu a {
-	color: #DB504A;
+/*	color: #DB504A;*/
 	padding: 0.1em;
 	font-size: 1.5em;
 	transition: background-color 300ms ease-in;
@@ -50,8 +50,8 @@ body {
 #submit-post {
 	font-size: 1.5rem;
 	width: 100%;
-	color: white;
-	background-color: #084C61;
+/*	color: white;*/
+/*	background-color: #084C61;*/
 	border: 0;
 	outline: 0;
 	padding: 0.25em 0;
@@ -67,7 +67,7 @@ body {
 }
 
 .post-info {
-	color: #DB504A;
+/*	color: #DB504A;*/
 }
 
 .author {
@@ -75,5 +75,5 @@ body {
 }
 
 .date {
-	color: #084C61;
+/*	color: #084C61;*/
 }
