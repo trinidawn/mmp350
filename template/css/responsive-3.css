@@ -1,0 +1,44 @@
+/* mobile */
+@media (max-width: 400px) {
+	#container {
+        width: 100%;
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+			"menu"
+            "header"
+			"login"
+			"sign-up"
+            "main"
+            "post";
+	}
+    
+    #menu-list {
+        justify-content: flex-start;
+		flex-direction: column;
+		align-items: baseline;  
+    }
+    
+    #menu-list li {
+		margin-left: 0;
+	}
+}
+
+/* tablet */
+@media (min-width: 401px) and (max-width: 800px) {
+	#container {
+		width: 100%;
+		grid-template-areas: 
+			"menu menu header"
+			"post sign-up login"
+            "main main main";
+	}
+
+
+    #menu-list {
+		justify-content: center;
+	}
+
+	#menu-list li {
+		margin-left: 0;	
+	}
+}

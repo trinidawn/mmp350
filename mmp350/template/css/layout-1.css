@@ -1,0 +1,45 @@
+#container {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, max-content);
+    grid-gap: 1em;
+    
+    grid-template-areas: 
+        "header header menu"
+        "login post sign-up"
+        "main main main";
+}
+
+#title {
+    grid-area: header;
+/*    background-color: deeppink;*/
+}
+
+#menu {
+    grid-area: menu;
+/*    background-color: palegreen;*/
+}
+
+#login {
+    grid-area: login;
+/*    background-color: gray;*/
+}
+
+#sign-up {
+    grid-area: sign-up;
+/*    background-color: mediumslateblue;*/
+}
+
+#posts {
+    grid-area: main;
+/*    background-color: skyblue;*/
+}
+
+#post {
+    grid-area: post;
+/*    background-color: goldenrod;*/
+}
