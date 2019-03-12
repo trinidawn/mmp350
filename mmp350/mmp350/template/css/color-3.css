@@ -1,25 +1,19 @@
 /* color scheme */
 
 :root {
-	--main-hue: 255; 
-	--main-color: hsl(var(--main-hue), 50%, 50%);
-
-	--accent-one-hue: calc(var(--main-hue) - 50);
-	--accent-one: hsl(var(--accent-one-hue), 50%, 50%);
-
-	--accent-two-hue: calc(var(--main-hue) + 150);
-	--accent-two: hsl(var(--accent-two-hue), 25%, 75%);
-    
-   --text-color: hsl(var(--accent-two-hue), 10%, 90%);
+	--main-color: #3B8BEB; /* blue */
+	--accent-color: #B23850; /* darkred */
+	--text-color: white;
+    --cover: #8590aa; /* grey blue */
 }
 
 body {
-    background-color: var(--accent-one);
+    background-color: cover;
 }
 
 #title {
 	color: var(--main-color);
-	text-shadow: 2px 2px 0 var(--accent-two);
+	text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 #login input, #sign-up input {
@@ -38,9 +32,8 @@ input::placeholder {
 }
 	
 #menu a {
-	color: var(--accent-two);
+	color: var(--accent-color);
 	transition: color 300ms ease-in;
-    box-shadow: 2px 4px;
 }
 	
 #menu a:hover {
@@ -56,19 +49,17 @@ input::placeholder {
 
 #submit-post {
 	background: var(--main-color);
-	color: var(--accent-two);
+	color: var(--text-color);
 }
 
 .post-text {
-	border-bottom: 1px solid var(--accent-two);
-    padding-bottom: 0.50em;
+	border-bottom: 2px dotted var(--cover);
 }
 	
 .post .author {
-	color: var(--accent-two);
-    font-weight: 100;
+	color: var(--main-color);
 }
 	
 .post .date {
-	color: var(--main-color);
+	color: var(--cover);
 }
