@@ -4,17 +4,18 @@
         width: 100%;
 		grid-template-columns: 1fr;
 		grid-template-areas: 
-			"menu"
-            "header"
-            "login"
+			"title"
+            "sign-in"
 			"sign-up"
-			"post"
-			"main";
+			"menu"
+            "banner"
+			"main"
+            "ecards";
 	}
     
     #menu-list {
-        justify-content: flex-start;
-		flex-direction:  column;
+        justify-content: space-between;
+		flex-direction: column;
 		align-items: flex-start;  
     }
     
@@ -28,14 +29,20 @@
 	#container {
 		width: 100%;
 		grid-template-areas: 
-			"menu menu menu"
-			"header login sign-up"
-			"post main main";
+			"title"
+            "sign-in"
+			"sign-up"
+			"menu"
+            "banner"
+			"main"
+            "ecards";
 	}
 
 
     #menu-list {
 		justify-content: space-between;
+        flex-direction: row;
+		align-items: flex-start; 
 	}
 
 	#menu-list li {
