@@ -1,30 +1,29 @@
-@import url('https://fonts.googleapis.com/css?family=Amiri:400,700|Roboto:400,500,900');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700,900|Oswald:300,400,600');
 
-/* font-family: 'Roboto', sans-serif;
-font-family: 'Amiri', serif; */
+/* font-family: 'Merriweather', serif;
+font-family: 'Oswald', sans-serif; */
 
 * { box-sizing: border-box; }
 
 body {
 	font-size: 16px;
 	line-height: 1.25;
-	background-color: #DCDCDC;
+/*	background-color: #DDD8C4;*/
 }
 
 
 #title, #login *, #sign-up *, #menu *, #post * {
-	font-family: 'Amiri', serif;
+	font-family: 'Merriweather', serif;
 }
 
 #posts {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Oswald', sans-serif;
 }
 
 #title h1 {
 	margin: 0;
-	color: #1B998B;
-    font-size: 2.5em;
-	text-shadow: 1.5px 1.5px 0 black;
+/*	color: #D64933;*/
+	text-shadow: 2px 2px 0 black;
 }
 
 #login *, #sign-up * {
@@ -32,16 +31,14 @@ body {
 }
 
 #menu a {
-	color: #E4572E;
+/*	color: #3993DD;*/
 	padding: 0.1em;
 	font-size: 1.25em;
 	transition: background-color 300ms ease-in;
-    font-weight: 600;
 }
 
 #menu a:hover {
-	background-color:  whitesmoke;
-    
+/*	background-color:  #AFC2D5;*/
 }
 
 
@@ -55,8 +52,8 @@ body {
 #submit-post {
 	font-size: 1.5rem;
 	width: 100%;
-	color: white;
-	background-color: #1B998B;
+/*	color: white;*/
+/*	background-color: #3993DD;*/
 	border: 0;
 	outline: 0;
 	padding: 0.25em 0;
@@ -67,18 +64,18 @@ body {
 }
 
 .post-text {
-	font-size: 1.3em;
+	font-size: 1.5em;
 	margin-bottom: 0.5em;
 }
 
 .post-info {
-	color: #1B998B;
+/*	color: darkred;*/
 }
 
 .author {
-	font-weight: 400;
+	font-weight: bold;
 }
 
 .date {
-	color: #656256;
+/*	color: #656256;*/
 }
