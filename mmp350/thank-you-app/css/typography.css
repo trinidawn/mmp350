@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900|Libre+Baskerville:400,400i,700');
+
+#title, #sign-in *, #sign-up *, #menu * {
+	font-family: 'Lato', sans-serif;
+}
+
+.main {
+    font-family: 'Libre Baskerville', serif;
+}
