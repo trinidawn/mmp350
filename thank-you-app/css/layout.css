@@ -1,3 +1,22 @@
+#container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, max-content);
+    grid-gap: 1em;
+    
+    grid-template-areas: 
+        "title sign-up sign-in"
+        "menu menu menu"
+        "banner banner banner"
+        "main main main"
+        "ecards ecards ecards"
+        "banner2 banner2 banner2"
+        "banner3 banner3 banner3";
+}
 
 * {
     margin: 0;
@@ -5,138 +24,67 @@
     box-sizing: border-box;
 }
 
-
-
-html {
-    box-sizing: border-box;
-}
-
-body {
-    font-size: 16px;
-	line-height: 1.25;
-    width: 100%;
-}
-
-#container{
-    width: 100%;
-    margin: 0 auto;
+#menu {
+    grid-area: menu;   
 }
 
 #title {
-    width: 75%;
-    float: left;
+    grid-area: title;
 }
 
 #title img{
-   width: 15%;
-   
+   width: 20%;
+   margin-left: 10%;
+}
+
+#sign-up {
+    grid-area: sign-up;
+}
+
+#sign-in {
+    grid-area: sign-in;
 }
 
 #sign-in, #sign-up {
-    width: 10%;
+    width: 40%;
     float: left;
-    border-radius: 200px;
-    font-size: 10px;
+    margin-left: 10%;
+    margin-top: 7%
 }
 
-.btn:link,
-.btn:visited{
-    display: inline-block;
-    padding: 10px 30px;
-    font-weight: 300;
+#submit-login {
+    padding: 5px 25px;
+    font-weight: 400;
     text-decoration: none;
     border-radius: 200px;
-    transition: background-color 0.2s, border 0.2s, color 0.2s;
-}
-
-.btn:link,
-.btn:visited{
-    display: inline-block;
-    padding: 10px 30px;
-    font-weight: 300;
-    text-decoration: none;
-    border-radius: 200px;
-    transition: background-color 0.2s, border 0.2s, color 0.2s;
-}
-
-.btn-full:link,
-.btn-full:visited {
-    background-color: #e67e22;
-    border: 1px solid #e67e22;
-    color: #fff;
-    margin-right: 15px;
-}
-
-.btn-ghost:link,
-.btn-ghost:visited {
-    border: 1px solid #e67e22;
-    color: #e67e22; 
-}
-
-.btn:hover,
-.btn:active {
-    background-color: #cf6d17;
-}
-
-.btn-full:hover,
-.btn-full:active {
-    border: 1px solid #cf6d17;
-}
-
-.btn-ghost:hover,
-.btn-ghost:active {
-    border: 1px solid #cf6d17;
-    color: #fff; 
+    background-color: ;
+    border: 1px solid ;
+    color: ;
 } 
 
-/*menu flex box*/
-#menu {
-   width: 100%; 
-    float: left;
+#main {
+    grid-area: main;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
-#menu-list {
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    width: 50%;
-    margin: 0 auto;
-    color: #F4511E;
+#ecards{
+    grid-area: ecards;
 }
 
-#menu-list li {
-    margin-left: 5%;
-    position: relative;
-    margin-left: 10%;
-    font-size: 1.5em;
-    margin-bottom: 10%;
+#banner {
+    grid-area: banner;
+    width: 100%;
+    margin-top: 2%;
 }
 
-
-.banner img {
+#banner img {
     width: 100%;
 }
 
-.main {
-    text-align: center;
-    font-size: 1.5em;
-    padding: 20px;
-    margin: 10%;
-}
-
-h1 {
-    font-size: 2em;
-    color: #F4511E;
-}
-
+/*image showcase*/
 .section-ecards {
     padding: 0;
-}
-
-.ecards-showcase {
-    list-style: none;
-    width: !00%;  
 }
 
 .ecards-showcase li {
@@ -149,7 +97,7 @@ h1 {
     width: 100%;
     margin: 0;
     overflow: hidden;
-    background-color: #000;
+    background-color: ;
 }
 
 .ecards-photo img {
@@ -164,4 +112,22 @@ h1 {
     opacity: 1;
     transform: scale(1.03);
 }
+
+
+#banner2 {
+    grid-area: banner2;
+}
+
+#banner2 img {
+    width: 100%;
+}
+
+#banner3 {
+    grid-area: banner3;
+}
+
+#banner3 img {
+    width: 100%;
+}
+
 

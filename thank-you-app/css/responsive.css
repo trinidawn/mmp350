@@ -10,18 +10,38 @@
 			"menu"
             "banner"
 			"main"
-            "ecards";
+            "ecards"
+            "banner2"
+            "banner3";
 	}
     
     #menu-list {
-        justify-content: space-between;
+        justify-content: flex-start;
 		flex-direction: column;
-		align-items: flex-start;  
+		align-items: center;  
     }
     
     #menu-list li {
-		margin-left: 0;
+		flex-basis: auto;
+        font-size: 30px;
 	}
+    
+    h1 {
+        font-size: 30px;
+    }
+    
+    #main p {
+        font-size: 12px;
+    }
+    
+    #sign-in {
+        font-size: 10px;
+    }
+    
+    #sign-up {
+        font-size: 10px;
+    }
+    
 }
 
 /* tablet */
@@ -35,7 +55,9 @@
 			"menu"
             "banner"
 			"main"
-            "ecards";
+            "ecards"
+            "banner2"
+            "banner3";
 	}
 
 
@@ -46,6 +68,7 @@
 	}
 
 	#menu-list li {
-		margin-left: 0;	
+		
+        font-size: 30px;
 	}
 }

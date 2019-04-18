@@ -1,9 +1,54 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700,900|Libre+Baskerville:400,400i,700');
 
-#title, #sign-in *, #sign-up *, #menu * {
+/*font-family: 'Lato', sans-serif;
+font-family: 'Libre Baskerville', serif;*/
+
+* { box-sizing: border-box; }
+
+body {
+	font-size: 16px;
+	line-height: 1.25;
+}
+
+
+#title, #sign-up *, #sign-in *, #menu * {
 	font-family: 'Lato', sans-serif;
 }
 
-.main {
-    font-family: 'Libre Baskerville', serif;
+#main {
+	font-family: 'Libre Baskerville', serif;
+    text-align: center;
 }
+
+#main p {
+    font-size: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+h1 {
+	color: ;
+    font-size: 40px;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#sign-in *, #sign-up * {
+	font-size: 1em;
+}
+
+#menu a {
+	color: ;
+	padding: 0.2em;
+	font-size: 1em;
+	transition: background-color 300ms ease-in;
+    text-shadow: 1px 1px 0 ;
+    text-decoration: none;
+}
+
+#menu a:hover { 
+  background-color: ;
+}
+
+
