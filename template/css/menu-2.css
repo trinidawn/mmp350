@@ -1,0 +1,18 @@
+/*menu flex box*/
+#menu-list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#menu-list li {
+    background-color: burlywood;
+    flex-basis: 40px;
+    font-size: 35px;
+    
+}
+
+
