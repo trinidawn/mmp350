@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Thank you app</title>
+	<title>layout</title>
 <link href="style.css" rel="stylesheet" type="text/css">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,6 +9,7 @@
 <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-storage.js"></script>
 <script>
   // Initialize Firebase
   var config = {
@@ -72,9 +73,8 @@
 			<button id="sign-up">Sign Up</button>
 <!--			<p id="signup-response"></p>-->
 		</div>
-		
    
-        <!-- navigation / menu -->
+    <!-- navigation / menu -->
 		<div id="menu">
 			<ul id="menu-list">
 				<li><a href="eCards.html">ECards</a></li>
@@ -82,72 +82,13 @@
 				<li><a href="help.html">Get Help</a></li>
 			</ul>
 		</div>
-		
    
-        <!-- image -->
+   <!-- image -->
         <div id="banner">
-            <img src="image/Cards-Banner.jpg">
+            <img src="image/thankyouCards_Banner.jpg">
         </div> 
-     
-      
-      <!-- section main text -->
-      <div id="main">
-          <h1>Online Thank You eCards for Every Occasion</h1>
-      <p>Show your gratitude for any type of occasion – big or small. Thoughtfully customize a beautiful thank you eCard that’s easy to create but hard to forget.</p>
-      </div>
-       
-      
-     <!-- ecards photo showcase 1 -->
-       <section id="ecards">
-              <ul class="ecards-showcase">
-              <li>
-                  <figure class="ecards-photo">
-                      <img src="image/thank03.png" alt="">
-                  </figure>
-              </li>
-              <li>
-                  <figure class="ecards-photo">
-                      <img src="image/thank04.png" alt="">
-                  </figure>
-              </li>
-              <li>
-                  <figure class="ecards-photo">
-                      <img src="image/thank5.png" alt="">
-                  </figure>
-              </li>
-              <li>
-                  <figure class="ecards-photo">
-                      <img src="image/thank08.png" alt="">
-                  </figure>
-              </li>
-          </ul> 
-       </section> 
-       
-       <!-- posting content -->
-		<div id="post">
-			<textarea id="write-post" placeholder="What's happening?"></textarea>
-			<input id="category" placeholder="Add category">
-			<button id="submit-post">Post</button>
-		</div>
-	
-		<!-- feed/posts/users content -->
-		<div id="posts"></div>
-       
-      <div id="banner2">
-            <img src="image/reviews.png">
-        </div> 
-  
-       
-       <div id="banner3">
-              <img src="image/footer.png"> 
-       </div>
-    </div> 
-      
-    <script src="js/auth.js"></script>
-	<script src="js/post.js"></script> <!--creating a post -->
-	<script src="js/create-post.js"></script>
-	<script src="js/posts.js"></script> 
-	
-       
+    </div>
+    </div>
+
 </body>
 </html>

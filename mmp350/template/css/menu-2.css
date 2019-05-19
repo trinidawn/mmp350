@@ -3,12 +3,16 @@
     padding: 0;
     list-style: none;
     display: flex;
-    
-    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 #menu-list li {
-    margin-left: 1em;
+    background-color: burlywood;
+    flex-basis: 40px;
+    font-size: 35px;
+    
 }
 
 

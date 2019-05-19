@@ -1,66 +1,48 @@
-/* mobile devices */
+/* mobile */
 @media (max-width: 400px) {
 	#container {
-		width: 100%;
-		grid-template-columns: 1fr;	
+        width: 100%;
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+			"menu"
+            "header"
+            "login"
+			"sign-up"
+			"post"
+			"main";
 	}
-	#title, #login, #sign-up, #menu, #post, #posts  { 
-		grid-column: 1;
+    
+    #menu-list {
+        justify-content: flex;
+		flex-direction:  column;
+		align-items: center;  
+    }
+    
+    #menu-list li {
+		flex-basis: auto;
+        font-size: 25px;
 	}
-
-	#title {
-		grid-row: 2;
-	}
-
-	#login {
-		grid-row: 3;
-	}
-	#sign-up {
-		grid-row: 5;
-	}
-	#menu {
-		grid-row: 1;
-	}
-
-	#post {
-		grid-row: 4;
-	}
-
-	#posts {
-		grid-row: 6;
-	}
-
 }
-
 
 /* tablet */
 @media (min-width: 401px) and (max-width: 800px) {
 	#container {
-		width: 100%;	
+		max-width: width: 800px;
+        grid-template-rows: 3fr;
+        grid-template-columns: 3fr;
+		grid-template-areas: 
+			"menu menu menu"
+			"header login sign-up"
+			"post main main";
 	}
 
-	#post {
-		grid-column: 3 / span 1;
-		grid-row: 1;
+
+    #menu-list {
+		justify-content: flex-start;
+        display: flex;
 	}
 
-	#posts {
-		grid-column: 1 / span 3;
-		grid-row: 2;
+	#menu-list li {
+		font-size: 25px;	
 	}
-
-	#login, #sign-up, #menu {
-		grid-row: 3;
-	}
-
-	#login { 
-		grid-column: 3;
-	}
-	#sign-up {
-		grid-column: 2;
-	}
-	#menu {
-		grid-column: 1;
-	}
-
 }
