@@ -4,12 +4,12 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: row-reverse;
+    justify-content: flex-start;
+    flex-direction:row;
 }
 
 #menu-list li {
-    background-color: darksalmon;
+    background-color: grey;
     font-size: 25px;
     flex-basis: 80px;
     text-align: center;
