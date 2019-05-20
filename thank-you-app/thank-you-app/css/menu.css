@@ -1,0 +1,18 @@
+#menu-list{
+    padding: 0;
+    text-decoration-line: none;
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+/*    flex-direction: flex-start;*/
+    
+    }
+
+#menu-list li{
+    background-color: ;
+    flex-basis: 150px;
+    font-size: 30px;
+    text-align:center;
+    text-decoration-line: none;
+}

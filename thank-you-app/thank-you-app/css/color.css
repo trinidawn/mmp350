@@ -1,0 +1,45 @@
+/*color scheme: Complementary*/
+
+:root {
+	--main-color: #FF6365; /* orange-red */
+	--accent-color: #37BFB3; /* green-blue */
+	--text-color: 	#696969; /* gray */
+    --hover: #F2F2F2; /* smokewhite */
+    --background: #000; /* black */
+}
+
+
+body {
+    background-color: cover;
+}
+
+h1 {
+	color: var(--main-color);
+}
+
+#menu a {
+	color: var(--accent-color);
+    text-shadow: 1px 1px 0 var(--background);
+}
+input::placeholder {
+	color: var(--text-color);
+}
+
+#submit-login {
+	background-color: var(--main-color);
+    border: 1px solid var (--main-color);
+	color: var(--text-color);
+	
+}
+	
+#menu a:hover {
+	background-color: var(--hover);
+}
+
+.ecards-photo {
+    background-color: var(--background);
+}
+
+#header {
+    color: var(--accent-color);
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thank you app</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCTnxQu76qd_gm5y3uqPdLVs3W0M0Q-QnA",
+    authDomain: "thank-you-app-mmp350.firebaseapp.com",
+    databaseURL: "https://thank-you-app-mmp350.firebaseio.com",
+    projectId: "thank-you-app-mmp350",
+    storageBucket: "thank-you-app-mmp350.appspot.com",
+    messagingSenderId: "315853331675"
+  };
+  firebase.initializeApp(config);
+</script>
+
+</head>
+<body>
+  <div id="container">
+		<!-- title / logo -->
+		<div id="title">
+			<a href="index.html"><img src="image/logo3.png"></a>
+		</div>
+		
+		<!-- user info -->
+<!--
+		<div id="user-info">
+			<div id="display-name"></div>
+			<button id="logout">Log Out</button>
+		</div>
+-->
+		
+		<!-- login -->
+
+
+		
+				<!-- navigation / menu -->
+		<div id="menu">
+			<ul id="menu-list">
+				<li><a href="eCards.html">ECards</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="help.html">Get Help</a></li>
+<!--				<li><a id="profile-link" href="">Profile</a></li>-->
+<!--				<li><a href="search.html">Search</a></li>-->
+<!--				<li><a href="">Users</a></li>-->
+			</ul>
+		</div>
+		
+		  <!-- image -->
+        <div id="banner">
+             <img src="image/thank-you-card.png">
+             
+        </div> 
+        
+<!--        Image Gallery-->
+<!--        <div class="container">-->
+
+	
+	<div class="gallery">
+        <div class="gallery-item">
+			<img class="gallery-image" src="image/card01.png" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="image/card02.png" alt="sunset behind San Francisco city skyline">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="image/card04.png" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="image/card03.png" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="image/card05.png" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="image/card06.png" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+		</div>
+		
+		<div class="gallery-item">
+			<img class="gallery-image" src="image/card12.png" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="image/thank6.png" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+		</div>
+		
+		<div class="gallery-item">
+			<img class="gallery-image" src="image/card09.png" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="image/card13.png" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+		</div>
+		
+		<div class="gallery-item">
+			<img class="gallery-image" src="image/card15.jpg" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="image/card11.png" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+		</div>
+		
+		<div class="gallery-item">
+			<img class="gallery-image" src="image/card08.png" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="image/card14.png" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+		</div>
+		
+		<div class="gallery-item">
+			<img class="gallery-image" src="image/card10.png" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="image/card16.png" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+		</div>
+
+	</div>
+	
+	
+
+<!--</div>-->
+     
+      
+     
+		
+		<!-- posting content -->
+<!--
+		<div id="post">
+			<textarea id="write-post" placeholder="What's happening?"></textarea>
+			<input id="category" placeholder="Add category">
+			<button id="submit-post">Post</button>
+		</div>
+-->
+	
+		<!-- feed/posts/users content -->
+<!--		<div id="posts"></div>-->
+	
+  
+
+<!--        footer-->
+       <div id="banner3">
+              <img src="image/footer.png"> 
+       </div>
+   
+  </div> 
+   
+    <script src="js/auth.js"></script>
+	<script src="js/post.js"></script> <!--creating a post -->
+	<script src="js/create-post.js"></script>
+	<script src="js/posts.js"></script>  
+</body>
+</html>
