@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thank you app</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCTnxQu76qd_gm5y3uqPdLVs3W0M0Q-QnA",
+    authDomain: "thank-you-app-mmp350.firebaseapp.com",
+    databaseURL: "https://thank-you-app-mmp350.firebaseio.com",
+    projectId: "thank-you-app-mmp350",
+    storageBucket: "thank-you-app-mmp350.appspot.com",
+    messagingSenderId: "315853331675"
+  };
+  firebase.initializeApp(config);
+</script>
+
+</head>
+<body>
+  <div id="container">
+		<!-- title / logo -->
+		<div id="title">
+			<a href="index.html"><img src="image/logo3.png"></a>
+		</div>
+		
+		<!-- user info -->
+		<div id="user-info">
+			<div id="display-name"></div>
+			<button id="logout">Log Out</button>
+		</div>
+		
+				<!-- navigation / menu -->
+		<div id="menu">
+			<ul id="menu-list">
+				<li><a href="eCards.html">ECards</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="help.html">Get Help</a></li>
+<!--				<li><a id="profile-link" href="">Profile</a></li>-->
+<!--				<li><a href="search.html">Search</a></li>-->
+<!--				<li><a href="">Users</a></li>-->
+			</ul>
+		</div>
+		
+		  <!-- image -->
+        <div id="banner">
+             <img src="image/thankyouCards_Banner.jpg">
+        </div> 
+        
+        <div id="header">Help is here...</div>
+        
+        <div id="text">1) Is it free to register for Thank You App lifetime membership?
+
+            Yes. Open Me is currently free for registration. Members can send an unlimited amount of eCards.<br>
+
+            2) Does it cost money to send eCards?
+
+            No. All digital eCards are completely free to send via Facebook and email.<br>
+
+            3) Does Thank You App offer physical delivery of cards?
+
+            Although Thank You App did once offer print cards for delivery, that service is currently on hold until further 
+
+            notice.<br>
+
+            4) Can I delete an eCard after I create it?
+
+            Yes, even after checkout you are able to delete an existing custom eCard.<br>
+            
+            5) Do I need to have a Facebook account in order to send an eCard?
+
+            No, you can also send via email.<br>
+
+            6) How many eCards can I send for free? 
+
+            There is no limit to the amount of eCards you can send. They are always free!<br>
+
+            7) I am interested in uploading my own photo. Can I turn that into an eCard?
+
+            Totally! We have blank eCards where you can upload your own image.<br>
+            
+            8) My eCard won’t send, and I am getting error messages. What can I do?
+
+            Please Contact Us with a detailed message describing the error that has occurred.
+        </div>
+     
+		
+		<!-- posting content -->
+<!--
+		<div id="post">
+			<textarea id="write-post" placeholder="What's happening?"></textarea>
+			<input id="category" placeholder="Add category">
+			<button id="submit-post">Post</button>
+		</div>
+-->
+	
+		<!-- feed/posts/users content -->
+<!--		<div id="posts"></div>-->
+  
+
+<!--        footer-->
+       <div id="banner3">
+              <img src="image/footer.png"> 
+       </div>
+    </div>
+    </div> 
+   
+   
+    <script src="js/auth.js"></script>
+	<script src="js/post.js"></script> <!--creating a post -->
+	<script src="js/create-post.js"></script>
+	<script src="js/posts.js"></script>  
+</body>
+</html>

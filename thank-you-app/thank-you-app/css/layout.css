@@ -1,0 +1,159 @@
+#container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, max-content);
+    grid-gap: 1em;
+    
+    grid-template-areas: 
+        "title sign-up login"
+        "menu menu menu"
+        "banner banner banner"
+        "main main main"
+        "ecards ecards ecards"
+        "gallery gallery gallery"
+        "header header header"
+        "text text text"
+        "post post post"
+        "textarea textarea textarea"
+        "banner2 banner2 banner2"
+        "banner3 banner3 banner3";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#menu {
+    grid-area: menu;   
+}
+
+#title {
+    grid-area: title;
+}
+
+#title img{
+   width: 35%;
+   margin-left: 10%;
+}
+
+#sign-up {
+    grid-area: sign-up;
+}
+
+#login {
+    grid-area: login;
+}
+
+#sign-up, #login {
+    width: 50%;
+    margin-top: 5%;
+}
+
+.gallery{
+    grid-area: gallery;
+}
+
+#submit-login {
+    padding: 5px 25px;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 5px;
+/*    background-color: ;*/
+    border: 1px solid ;
+    color: ;
+} 
+
+#main {
+    grid-area: main;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#ecards{
+    grid-area: ecards;
+    display: flex;
+}
+
+#post {
+    grid-area: post;
+}
+
+#banner {
+    grid-area: banner;
+    width: 100%;
+    margin-top: 2%;
+}
+
+#banner img {
+    width: 100%;
+}
+
+/*image showcase*/
+.section-ecards {
+    padding: 0;
+}
+
+.ecards-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.ecards-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: ;
+}
+
+.ecards-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.ecards-photo img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+
+#banner2 {
+    grid-area: banner2;
+}
+
+#banner2 img {
+    width: 100%;
+}
+
+#banner3 {
+    grid-area: banner3;
+}
+
+#banner3 img {
+    width: 100%;
+}
+
+#header {
+    grid-area: header;
+    
+}
+
+#text {
+    grid-area: text;
+}
+
+form {
+    grid-area: form; 
+    width: 50%;
+    text-align: center;
+}
+
