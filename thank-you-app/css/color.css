@@ -3,7 +3,7 @@
 :root {
 	--main-color: #FF6365; /* orange-red */
 	--accent-color: #37BFB3; /* green-blue */
-	--text-color: #fff; /* white */
+	--text-color: 	#696969; /* gray */
     --hover: #F2F2F2; /* smokewhite */
     --background: #000; /* black */
 }
@@ -38,4 +38,8 @@ input::placeholder {
 
 .ecards-photo {
     background-color: var(--background);
+}
+
+#header {
+    color: var(--accent-color);
 }

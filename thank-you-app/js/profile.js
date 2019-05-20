@@ -3,6 +3,14 @@ const uid = location.search.split('=')[1];
 const db = firebase.database();
 const ref = db.ref('users').child(uid);
 
+firebase.auth().onAuthStateChanged(function(user) {
+	if (user.uid == uid) {
+		document.body.classList.add('is-user');
+	} else {
+		document.body.classList.remove('is-user');
+	}
+});
+
 // firebase event, any change to database
 ref.on('value', updateUser);
 
@@ -10,6 +18,9 @@ const profileDisplayName = document.getElementById('profile-display-name');
 
 function updateUser(snapshot) {	
 	const user = snapshot.val();
+	if (user.photo) {
+		displayPhoto(user.photo);	
+	}
 	profileDisplayName.textContent = user.displayName;
 	profileNameInput.placeholder = user.displayName;
 }
@@ -22,6 +33,8 @@ const profileEditButton = document.getElementById('submit-display-name');
 
 editButton.onclick = function() {
 	editProfile.style.display = 'block';
+	const addPhoto = get('add-photo');
+	addPhoto.style.display = 'block';
 };
 
 profileEditButton.onclick = updateProfile;
@@ -30,6 +43,7 @@ function updateProfile() {
 	const username = profileNameInput.value;
 	if (username.length > 2) {
 		ref.update({ displayName: username });
+		firebase.auth().currentUser.updateProfile({ displayName: username });
 		editProfile.style.display = 'none';
 		profileNameInput.classList.remove('error');
 	} else {
@@ -38,20 +52,39 @@ function updateProfile() {
 	}
 }
 
+function get(id) {
+	return document.getElementById(id);
+}
 
-
-
-//upload prpfile photo
-
-const photoInput = document.get('photo-input');
-const photoSubmit = document.get('submit-photo');
-
+/* upload profile photo */
+const photoInput = get('photo-input');
+const photoSubmit = get('submit-photo');
 photoSubmit.addEventListener('click', uploadPhoto);
 
-function uploadPhoto(){
-    const file = photoInput.files[0];
-    if (file) {
-        const storage = firebase.storage();
-        const photoRef = storage.ref('users').child
-    }
+function uploadPhoto() {
+	const file = photoInput.files[0];
+	if (file) {
+		const storage = firebase.storage();
+		const photoRef = storage.ref('users').child(uid).child('profile-photo');
+		const promise = photoRef.put(file);
+		
+		promise.then(function(snapshot) {
+			return snapshot.ref.getDownloadURL();
+		}).then(updatePhoto);
+		
+	} else {
+		alert('Click Choose File');
+	}
+}
+
+function updatePhoto(url) {
+	ref.update({ photo: url });
+	displayPhoto(url);
+}
+
+function displayPhoto(url) {
+	const profileImg = get('profile-img');
+	profileImg.src = url;
+	const addPhoto = get('add-photo');
+	addPhoto.style.display = 'none';
 }

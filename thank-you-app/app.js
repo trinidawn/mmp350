@@ -21,4 +21,3 @@ signupButton.onclick = function() {
 	const response = document.getElementById('signup-response');
 	response.textContent = "Hello " + username + ", from " + b + ". Welcome to My App."
 };
-

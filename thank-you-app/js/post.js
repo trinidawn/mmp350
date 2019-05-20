@@ -1,4 +1,5 @@
 const postText = document.getElementById('write-post');
+const categoryInput = document.getElementById('category');
 const submitPost = document.getElementById('submit-post');
 
 const db = firebase.database();
@@ -7,19 +8,21 @@ const ref = db.ref('posts');
 /* add a new post to the database */
 function addPost() {
 	const info = {
+		category: categoryInput.value,
 		text: postText.value,
 		date: Date(),
 		uid: firebase.auth().currentUser.uid,
 		displayName: firebase.auth().currentUser.displayName
 	};
+	
 	const promise = ref.push(info);
 	promise.then(function() { 
 		// indicate post went through
 		postText.value = '';
 	});
-//    below line is a anonymous function
-	promise.catch(function(error) { alert(error.message); }); 
+	promise.catch(function(error) { alert(error.message); });
 }
+
 
 submitPost.addEventListener('click', addPost);
 postText.addEventListener('keydown', function(event) {

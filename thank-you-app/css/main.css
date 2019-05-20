@@ -1,5 +1,7 @@
+*{ box-sizing: border-box; }
+
 /* interface elements */
-button, input {
+button, input input[type=file] {
 	font-size: 1.25em;
 	font-family: inherit;
 	border: none;

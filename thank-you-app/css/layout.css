@@ -9,12 +9,16 @@
     grid-gap: 1em;
     
     grid-template-areas: 
-        "title sign-up sign-in"
+        "title sign-up login"
         "menu menu menu"
         "banner banner banner"
         "main main main"
         "ecards ecards ecards"
+        "gallery gallery gallery"
+        "header header header"
+        "text text text"
         "post post post"
+        "textarea textarea textarea"
         "banner2 banner2 banner2"
         "banner3 banner3 banner3";
 }
@@ -42,21 +46,25 @@
     grid-area: sign-up;
 }
 
-#sign-in {
-    grid-area: sign-in;
+#login {
+    grid-area: login;
 }
 
-#sign-in, #sign-up {
-    width: 40%;
+#sign-up, #login {
+    width: 50%;
     margin-top: 5%;
+}
+
+.gallery{
+    grid-area: gallery;
 }
 
 #submit-login {
     padding: 5px 25px;
     font-weight: 400;
     text-decoration: none;
-    border-radius: 200px;
-    background-color: ;
+    border-radius: 5px;
+/*    background-color: ;*/
     border: 1px solid ;
     color: ;
 } 
@@ -134,4 +142,18 @@
     width: 100%;
 }
 
+#header {
+    grid-area: header;
+    
+}
+
+#text {
+    grid-area: text;
+}
+
+form {
+    grid-area: form; 
+    width: 50%;
+    text-align: center;
+}
 
